@@ -1,0 +1,83 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../#.#">
+
+<style>
+//filter: grayscale(1);
+
+
+//.topArea {
+  border: 1px solid #111;
+  width: 70%;
+  height: 5em;
+  margin-left: 15%;
+}
+
+section {
+	width: 33%;
+	height: 33%;
+	padding: 2em 4em;
+	background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Montagem_-_Aracaju.jpg/270px-Montagem_-_Aracaju.jpg');
+}
+
+/* grayscale(1) torna cinza, brightness(200%) torna mais branco*/
+section button {
+	height: 4em;
+	width: 4em;
+	border-radius: 33%;	
+	background-color: black;
+	filter: grayscale(1) brightness(200%) opacity(0.5);
+	border: none;
+	margin: 0em 0em;
+}
+
+
+/* Add a background color on hover */
+section button:hover {
+  background-color: white;
+  filter: grayscale(0);
+  border: 1px solid #111;
+  //text-shadow: 2px 2px 4px black, 0 0 5px darkblue;
+  //font-size: 2.3em;
+}
+
+/*
+section button {
+  //border: 1px solid green;
+  color: white; /* White text */
+  // /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+font-size: 1em;
+}
+*/
+
+//section button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+/* Clear floats (clearfix hack) */
+section:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+
+
+</style>
+
+
+</head>
+  <section>
+    <button class="key">⚙️</button>
+    <button class="key">🛠</button>
+    <button class="key">📜</button>
+    <button class="key">🖥</button>
+    <button class="#">🔗</button>
+  </section>
+
+
+</body>
+</html>
